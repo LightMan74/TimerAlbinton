@@ -373,7 +373,7 @@ Partial Class Timer
         Me.MinimizeBox = False
         Me.MinimumSize = New System.Drawing.Size(469, 238)
         Me.Name = "Timer"
-        Me.Text = "ALBINTON - Timer"
+        Me.Text = "ALBINTON - Timer - 2.00"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
