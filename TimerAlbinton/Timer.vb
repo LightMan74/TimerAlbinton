@@ -189,9 +189,10 @@ Public Class Timer
         Button2.Enabled = False
         Button3.Enabled = True
         Label4.Text = Label1.Text & " : " & Label3.Text
-
-
-
+        Display.ProgressBar1.Maximum = ((resetmin * 60) + resetsec) / 2
+        Display.ProgressBar2.Maximum = ((resetmin * 60) + resetsec) / 2
+        Display.ProgressBar1.Value = 0
+        Display.ProgressBar2.Value = 0
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -280,36 +281,46 @@ Public Class Timer
             Label1.Text = min
             Label3.Text = sec
 
-            If sec = 0 And min = 1 Then
-                Label1.ForeColor = Color.Red
-                Label2.ForeColor = Color.Red
-                Label3.ForeColor = Color.Red
-                Display.Label1.ForeColor = Color.Red
+            Dim secstotal As Integer = min * 60 + sec
+            Dim resetsecstotal As Integer = resetmin * 60 + resetsec
+            If secstotal >= Math.Round(resetsecstotal / 2) Then
+                Display.ProgressBar1.Value = (resetsecstotal - secstotal)
+            ElseIf secstotal < Math.Round(resetsecstotal / 2) Then
+                Display.ProgressBar2.Value = (resetsecstotal / 2 - secstotal)
+            Else
 
-                If l1m.ForeColor = Color.Green Then
-                    pausevlcstart()
-                    My.Computer.Audio.Play(My.Resources._1minute, AudioPlayMode.WaitToComplete)
-                    pausevlcstart()
+            End If
+
+            If secstotal = Math.Round(resetsecstotal / 2) Then 'If sec = 0 And min = 1 Then
+                    'Label1.ForeColor = Color.Red
+                    'Label2.ForeColor = Color.Red
+                    'Label3.ForeColor = Color.Red
+                    'Display.Label1.ForeColor = Color.Red
+
+                    If l1m.ForeColor = Color.Green Then
+                        pausevlcstart()
+                        My.Computer.Audio.Play(My.Resources._1minute, AudioPlayMode.WaitToComplete)
+                        pausevlcstart()
+                    End If
+
+                    'Caller.setsoundcalle()
+
                 End If
 
-                'Caller.setsoundcalle()
+                If sec = firstcaller(1) And min = firstcaller(0) And Caller.Check1c.Checked = True Then
+                    'Caller.setsoundcalle()
+                    thread = New System.Threading.Thread(AddressOf Caller.setsoundcalle)
+                    thread.Start()
+                End If
+
+                If sec = secondecaller(1) And min = secondecaller(0) And Caller.Check2c.Checked = True Then
+                    'Caller.setsoundcalle()
+                    thread2 = New System.Threading.Thread(AddressOf Caller.setsoundcalle)
+                    thread2.Start()
+                End If
 
             End If
-
-            If sec = firstcaller(1) And min = firstcaller(0) And Caller.Check1c.Checked = True Then
-                'Caller.setsoundcalle()
-                thread = New System.Threading.Thread(AddressOf Caller.setsoundcalle)
-                thread.Start()
-            End If
-
-            If sec = secondecaller(1) And min = secondecaller(0) And Caller.Check2c.Checked = True Then
-                'Caller.setsoundcalle()
-                thread2 = New System.Threading.Thread(AddressOf Caller.setsoundcalle)
-                thread2.Start()
-            End If
-
-        End If
-        Display.Label1.Text = "TEMPS RESTANT" & vbLf & min & " : " & sec
+            Display.Label1.Text = "TEMPS RESTANT" & vbLf & min & " : " & sec
     End Sub
     'str(Minutes, Secondes)
     Public firstcaller(1) As Integer
@@ -373,7 +384,7 @@ Public Class Timer
         Else
             lstart.ForeColor = Color.Red
         End If
-        i = MsgBox("voulez vous activer le son 1 Minute ?", MsgBoxStyle.YesNo)
+        i = MsgBox("voulez vous activer le son Middel time ?", MsgBoxStyle.YesNo)
         If i = MsgBoxResult.Yes Then
             l1m.ForeColor = Color.Green
         Else

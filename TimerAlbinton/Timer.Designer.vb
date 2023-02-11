@@ -282,9 +282,9 @@ Partial Class Timer
         Me.l1m.ForeColor = System.Drawing.Color.Red
         Me.l1m.Location = New System.Drawing.Point(377, 27)
         Me.l1m.Name = "l1m"
-        Me.l1m.Size = New System.Drawing.Size(48, 13)
+        Me.l1m.Size = New System.Drawing.Size(60, 13)
         Me.l1m.TabIndex = 29
-        Me.l1m.Text = "1 Minute"
+        Me.l1m.Text = "Middel time"
         '
         'lstop
         '
@@ -334,6 +334,7 @@ Partial Class Timer
         Me.Button4.TabIndex = 33
         Me.Button4.Text = "CALLER"
         Me.Button4.UseVisualStyleBackColor = True
+        Me.Button4.Visible = False
         '
         'Timer
         '
@@ -373,7 +374,7 @@ Partial Class Timer
         Me.MinimizeBox = False
         Me.MinimumSize = New System.Drawing.Size(469, 238)
         Me.Name = "Timer"
-        Me.Text = "ALBINTON - Timer - 2.00"
+        Me.Text = "ALBINTON - Timer - 2.10"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
