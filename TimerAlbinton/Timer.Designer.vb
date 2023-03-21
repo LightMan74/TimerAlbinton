@@ -250,9 +250,9 @@ Partial Class Timer
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.InitialImage = CType(resources.GetObject("PictureBox1.InitialImage"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(347, 132)
+        Me.PictureBox1.Location = New System.Drawing.Point(347, 128)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(106, 69)
+        Me.PictureBox1.Size = New System.Drawing.Size(106, 73)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 26
         Me.PictureBox1.TabStop = False
