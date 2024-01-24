@@ -55,43 +55,43 @@ Partial Class Display
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FONTToolStripMenuItem, Me.COLORToolStripMenuItem, Me.HIDEBARREToolStripMenuItem, Me.SHOWBARREToolStripMenuItem, Me.TOPMOSTONToolStripMenuItem, Me.TOPMOStOFFToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(153, 136)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(181, 158)
         '
         'FONTToolStripMenuItem
         '
         Me.FONTToolStripMenuItem.Name = "FONTToolStripMenuItem"
-        Me.FONTToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.FONTToolStripMenuItem.Text = "FONT"
+        Me.FONTToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.FONTToolStripMenuItem.Text = "POLICE TEXTE"
         '
         'COLORToolStripMenuItem
         '
         Me.COLORToolStripMenuItem.Name = "COLORToolStripMenuItem"
-        Me.COLORToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.COLORToolStripMenuItem.Text = "COLOR"
+        Me.COLORToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.COLORToolStripMenuItem.Text = "COULEUR TEXTE"
         '
         'HIDEBARREToolStripMenuItem
         '
         Me.HIDEBARREToolStripMenuItem.Name = "HIDEBARREToolStripMenuItem"
-        Me.HIDEBARREToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.HIDEBARREToolStripMenuItem.Text = "HIDE BARRE"
+        Me.HIDEBARREToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.HIDEBARREToolStripMenuItem.Text = "CACHER BARRE"
         '
         'SHOWBARREToolStripMenuItem
         '
         Me.SHOWBARREToolStripMenuItem.Name = "SHOWBARREToolStripMenuItem"
-        Me.SHOWBARREToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.SHOWBARREToolStripMenuItem.Text = "SHOW BARRE"
+        Me.SHOWBARREToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SHOWBARREToolStripMenuItem.Text = "AFFICHER BARRE"
         '
         'TOPMOSTONToolStripMenuItem
         '
         Me.TOPMOSTONToolStripMenuItem.Name = "TOPMOSTONToolStripMenuItem"
-        Me.TOPMOSTONToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.TOPMOSTONToolStripMenuItem.Text = "TOP MOST ON"
+        Me.TOPMOSTONToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.TOPMOSTONToolStripMenuItem.Text = "PREMIER PLAN ON"
         '
         'TOPMOStOFFToolStripMenuItem
         '
         Me.TOPMOStOFFToolStripMenuItem.Name = "TOPMOStOFFToolStripMenuItem"
-        Me.TOPMOStOFFToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.TOPMOStOFFToolStripMenuItem.Text = "TOP MOSt OFF"
+        Me.TOPMOStOFFToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.TOPMOStOFFToolStripMenuItem.Text = "PREMIER PLAN OFF"
         '
         'ProgressBar1
         '
@@ -129,7 +129,7 @@ Partial Class Display
         Me.MaximumSize = New System.Drawing.Size(850, 270)
         Me.MinimizeBox = False
         Me.Name = "Display"
-        Me.Text = "ALBINTON - DISPLAY"
+        Me.Text = "TEMPS RESTANT"
         Me.TopMost = True
         Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)

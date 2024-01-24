@@ -17,7 +17,7 @@ Public Class Heure
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Dim time As DateTime = DateTime.Now
         Dim format As String = "HH:mm:ss"
-        Label1.Text = "HEURES" & vbLf & time.ToString(Format)
+        Label1.Text = "HEURE" & vbLf & time.ToString(format)
     End Sub
 
     Private Sub Heure_SizeChanged(sender As Object, e As EventArgs) Handles Me.SizeChanged

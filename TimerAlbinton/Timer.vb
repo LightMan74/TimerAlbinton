@@ -154,6 +154,11 @@ Public Class Timer
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim min As Integer = Label1.Text
+        Dim sec As Integer = Label3.Text
+        If min = 0 And sec = 0 Then
+            breset.PerformClick()
+        End If
 
         If Label1.Text = "X" Then
             Label1.Text = "00"
@@ -186,7 +191,7 @@ Public Class Timer
         resetmin = Label1.Text
         resetsec = Label3.Text
         Button1.Enabled = False
-        Button2.Enabled = False
+        breset.Enabled = False
         Button3.Enabled = True
         Label4.Text = Label1.Text & " : " & Label3.Text
         Display.ProgressBar1.Maximum = ((resetmin * 60) + resetsec) / 2
@@ -195,7 +200,7 @@ Public Class Timer
         Display.ProgressBar2.Value = 0
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles breset.Click
         Label1.Text = resetmin
         Label3.Text = resetsec
     End Sub
@@ -223,7 +228,7 @@ Public Class Timer
             cbysecondes2.Enabled = True
 
             Button1.Enabled = True
-            Button2.Enabled = True
+            breset.Enabled = True
             Button3.Enabled = False
         End If
     End Sub
@@ -260,7 +265,7 @@ Public Class Timer
             End If
 
             Button1.Enabled = True
-            Button2.Enabled = True
+            breset.Enabled = True
             Button3.Enabled = False
             Me.TopMost = True
             Me.TopMost = False

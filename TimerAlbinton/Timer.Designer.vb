@@ -26,7 +26,7 @@ Partial Class Timer
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Timer))
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.breset = New System.Windows.Forms.Button()
         Me.cb8min = New System.Windows.Forms.CheckBox()
         Me.cb10min = New System.Windows.Forms.CheckBox()
         Me.cb12min = New System.Windows.Forms.CheckBox()
@@ -69,15 +69,15 @@ Partial Class Timer
         Me.Button1.Text = "Start"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'breset
         '
-        Me.Button2.Enabled = False
-        Me.Button2.Location = New System.Drawing.Point(196, 75)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(92, 23)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Reset"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.breset.Enabled = False
+        Me.breset.Location = New System.Drawing.Point(196, 75)
+        Me.breset.Name = "breset"
+        Me.breset.Size = New System.Drawing.Size(92, 23)
+        Me.breset.TabIndex = 2
+        Me.breset.Text = "Reset"
+        Me.breset.UseVisualStyleBackColor = True
         '
         'cb8min
         '
@@ -262,9 +262,9 @@ Partial Class Timer
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(2, 185)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(167, 13)
+        Me.Label8.Size = New System.Drawing.Size(137, 13)
         Me.Label8.TabIndex = 27
-        Me.Label8.Text = "Propriete de l'association Alb'inton"
+        Me.Label8.Text = "Créé par LANSARD William"
         '
         'lstart
         '
@@ -366,7 +366,7 @@ Partial Class Timer
         Me.Controls.Add(Me.cb12min)
         Me.Controls.Add(Me.cb10min)
         Me.Controls.Add(Me.cb8min)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.breset)
         Me.Controls.Add(Me.Button1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -374,7 +374,7 @@ Partial Class Timer
         Me.MinimizeBox = False
         Me.MinimumSize = New System.Drawing.Size(469, 238)
         Me.Name = "Timer"
-        Me.Text = "ALBINTON - Timer - 2.10"
+        Me.Text = "Timer - 2.20"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -382,7 +382,7 @@ Partial Class Timer
     End Sub
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents breset As System.Windows.Forms.Button
     Friend WithEvents cb8min As System.Windows.Forms.CheckBox
     Friend WithEvents cb10min As System.Windows.Forms.CheckBox
     Friend WithEvents cb12min As System.Windows.Forms.CheckBox

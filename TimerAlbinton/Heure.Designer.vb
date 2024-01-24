@@ -29,11 +29,11 @@ Partial Class Heure
         Me.COLORToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HIDEBARREToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SHOWBARREToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TOPMOSTONToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TOPMOSTOFFToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
         Me.FontDialog1 = New System.Windows.Forms.FontDialog()
-        Me.TOPMOSTONToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TOPMOSTOFFToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -47,53 +47,53 @@ Partial Class Heure
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(833, 213)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "HEURES" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "0 : 00"
+        Me.Label1.Text = "HEURE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "0 : 00"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FONTToolStripMenuItem, Me.COLORToolStripMenuItem, Me.HIDEBARREToolStripMenuItem, Me.SHOWBARREToolStripMenuItem, Me.TOPMOSTONToolStripMenuItem, Me.TOPMOSTOFFToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(181, 158)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(179, 136)
         '
         'FONTToolStripMenuItem
         '
         Me.FONTToolStripMenuItem.Name = "FONTToolStripMenuItem"
         Me.FONTToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.FONTToolStripMenuItem.Text = "FONT"
+        Me.FONTToolStripMenuItem.Text = "POLICE TEXTE"
         '
         'COLORToolStripMenuItem
         '
         Me.COLORToolStripMenuItem.Name = "COLORToolStripMenuItem"
-        Me.COLORToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.COLORToolStripMenuItem.Text = "COLOR"
+        Me.COLORToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
+        Me.COLORToolStripMenuItem.Text = "COULEUR TEXTE"
         '
         'HIDEBARREToolStripMenuItem
         '
         Me.HIDEBARREToolStripMenuItem.Name = "HIDEBARREToolStripMenuItem"
         Me.HIDEBARREToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.HIDEBARREToolStripMenuItem.Text = "HIDE BARRE"
+        Me.HIDEBARREToolStripMenuItem.Text = "CACHER BARRE"
         '
         'SHOWBARREToolStripMenuItem
         '
         Me.SHOWBARREToolStripMenuItem.Name = "SHOWBARREToolStripMenuItem"
         Me.SHOWBARREToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.SHOWBARREToolStripMenuItem.Text = "SHOW BARRE"
-        '
-        'Timer1
-        '
+        Me.SHOWBARREToolStripMenuItem.Text = "AFFICHER BARRE"
         '
         'TOPMOSTONToolStripMenuItem
         '
         Me.TOPMOSTONToolStripMenuItem.Name = "TOPMOSTONToolStripMenuItem"
         Me.TOPMOSTONToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.TOPMOSTONToolStripMenuItem.Text = "TOP MOST ON"
+        Me.TOPMOSTONToolStripMenuItem.Text = "PREMIER PLAN ON"
         '
         'TOPMOSTOFFToolStripMenuItem
         '
         Me.TOPMOSTOFFToolStripMenuItem.Name = "TOPMOSTOFFToolStripMenuItem"
         Me.TOPMOSTOFFToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.TOPMOSTOFFToolStripMenuItem.Text = "TOP MOST OFF"
+        Me.TOPMOSTOFFToolStripMenuItem.Text = "PREMIER PLAN OFF"
+        '
+        'Timer1
+        '
         '
         'Heure
         '
@@ -105,7 +105,7 @@ Partial Class Heure
         Me.Controls.Add(Me.Label1)
         Me.MaximumSize = New System.Drawing.Size(850, 250)
         Me.Name = "Heure"
-        Me.Text = "ALBINTON - HEURES"
+        Me.Text = "HEURE"
         Me.TopMost = True
         Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
